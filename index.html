@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mykola Fomin CV</title>
+    <style>
+        #header{
+            text-align: center;
+        }
+        a[href^="mailto"]::before{
+            content: '📧 ';
+        }
+        a[href^="tel"]::before{
+            content: '📞 ';
+        }
+        a[href="https://github.com/ficknomin"]::before{
+            content: '🤖  ';
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Mykola Fomin</h1>
-    <img src="./assets/mugshot.jfif" alt=" a picture of a handsome young gentleman" height="200">
+    <div id="header">
+        <h1>Mykola Fomin</h1>
+        <img src="./assets/mugshot.jfif" alt=" a picture of a handsome young gentleman" height="200">
 
-    <p>40 King Street,<br>
-        Lancaster,<br>
-        LA1 1RE<br><br>
-        <em>fick.nomin@gmail.com<br>+4477172222470</em>
-    </p>
-    <a href="https://github.com/ficknomin">GitHub</a>
+        <address>40 King Street,<br>
+            Lancaster,<br>
+            LA1 1RE<br><br>
+            <em>
+                <a href="mailto:fick.nomin@gmail.com">fick.nomin@gmail.com</a><br>
+                <a href="tel:+4477172222470">+4477172222470</a></em>
+        </address>
+        <a href="https://github.com/ficknomin">GitHub</a>
+    </div>
     <hr>
 
     <h2>Profile</h2>
